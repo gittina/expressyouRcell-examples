@@ -1,4 +1,4 @@
-setwd("C:/Users/martina/Documents/LAB/SMA/visual_neuron/paperdraft/data_for_submission/")
+setwd("hereyouhavetowriteyourfolderpath")
 
 library(data.table)
 library(ggplot2)
