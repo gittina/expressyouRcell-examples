@@ -1,7 +1,10 @@
-setwd("hereyouhavetowriteyourfolderpath")
+setwd("C:/Users/martina/Documents/LAB/SMA/visual_neuron/paperdraft/data_for_submission/")
 
-library(data.table)
-library(ggplot2)
+dir.create("data")
+dir.create("movies")
+
+# library(data.table)
+# library(ggplot2)
 library(expressyouRcell)
 
 load("ensg_dt.RData")
@@ -10,6 +13,8 @@ load("ensg_dt.RData")
 
 gene_loc_table <- map_gene_localization(gene_set = "gencode.vM22.primary_assembly.annotation.gtf")
 #save(gene_loc_table, file = "gene_loc_table.RData")
+
+load("gene_loc_table.RData")
 
 # figure 1) trap seq data from neurons ----
 
@@ -356,10 +361,3 @@ animate(data = doktor_all_enr_p,
         filename = "movie_S15_m_up_enr",
         names = c("PND1","PND5"),
         format = "video")
-
-
-
-
-
-
-
